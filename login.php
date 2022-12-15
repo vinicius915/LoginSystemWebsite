@@ -5,10 +5,10 @@
     <legend>Login</legend>
 
     <label for=""> Usuario: </label>
-    <input type="text" placeholder="Digite..." name="user">
+    <input type="text" placeholder="Digite..." name="login">
 
     <label for=""> Senha: </label>
-    <input type="password" placeholder="Digite" name="pass">
+    <input type="password" placeholder="Digite" name="senha">
 
     <input type="submit" name="send" value="Enviar">
     </fieldset>
