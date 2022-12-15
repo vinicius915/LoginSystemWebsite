@@ -17,7 +17,19 @@
     if(!isset($_SESSION['login'])){
 
         if(isset($_POST['send'])){
-            echo 'formulario enviado'
+            $login = 'admin';
+            $senha =  '123' ;
+
+            $loginFor = $_POST['login'];
+            $senhaFor = $_POST['senha'];
+
+                if($login == $loginFor && $senha == $senhaFor){
+
+                    $_SESSION['login'] = true;
+                    header('location: www.google.com');                                     
+                } else{
+                    echo 'Usuario ou senha invalidos';
+                }
         }
 
 
